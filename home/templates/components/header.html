@@ -1,0 +1,102 @@
+{% load static %}
+
+<style>
+    .my-a {
+        color: black;
+        text-decoration: none;
+        text-align: center;
+        display: block;
+        /* important */
+    }
+
+    .dpd-btn,
+    .first-dpd {
+        -webkit-transition: 0.3s;
+        -moz-transition: 0.3s;
+        -ms-transition: 0.3s;
+        transition: 0.3s;
+    }
+
+    .dpd-btn {
+        height: 64px;
+        font: normal normal 700 1em/4em Arial, sans-serif;
+        overflow: hidden;
+        width: 200px;
+    }
+
+
+    .dpd-btn a:hover {
+        text-decoration: none;
+    }
+
+    .first-dpd {
+        margin-top: 0em;
+    }
+
+    .dpd-btn:hover .first-dpd {
+        margin-top: -4em;
+    }
+</style>
+
+<header>
+    <div class="tp-header__1 theme-bg p-relative">
+        <div id="header-sticky" class="tp-header__1-main header-border-button pl-105 pr-105">
+            <div class="container-fluid">
+                <div class="mega-menu-wrapper">
+                    <div class="row align-items-center">
+                        <div class="col-xxl-2 col-xl-2 col-6">
+                            <div class="logo border-right">
+                                <a href="{% url 'index' %}">
+                                    <img width="200px" src="{{ site_logo.image.url }}" alt="{{ site_logo.title }}">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xxl-6 col-xl-7 d-none d-xl-block">
+                            <div class="main-menu p-relative">
+                                <nav id="mobile-menu">
+                                    <ul>
+                                        <li><a href="{% url 'index' %}">Asosiy</a></li>
+                                        <li><a href="{% url 'services' %}">Xizmatlar</a></li>
+                                        <li><a href="{% url 'portfolio' %}">Portfolio</a></li>
+                                        <li><a href="{% url 'about' %}">Biz haqimizda</a></li>
+                                        <li><a href="{% url 'contact' %}">Aloqa</a></li>
+                                    </ul>
+
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="col-xxl-4 col-xl-3 d-xl-block col-md-6 col-6">
+                            <div class="tp-header__1-right d-flex justify-content-end align-items-center">
+
+                                <div class="header-mail-info mr-40 dpd-btn">
+                                    <a class="first-dpd my-a" href="/"><img src="{% static 'assets/img/flags/uz.png' %}"
+                                                                            alt="uz">
+                                        O'ZBEKCHA</a>
+                                    <a class="my-a" href="/"><img src="{% static 'assets/img/flags/ru.png' %}" alt="ru">
+                                        РУССКИЙ</a>
+                                </div>
+
+                                <a href="{% url 'contact' %}" class="tp-btn d-none d-xl-block tp-btn-hover">Konsultatsiya
+
+                                    <span><i
+                                            class="fal fa-long-arrow-right"></i>
+                                 <i class="fal fa-long-arrow-right"></i>
+                              </span>
+                                    <b></b>
+                                </a>
+
+
+                                <div class="tp-header-search-nav d-flex justify-content-end d-xl-none">
+                                    <div class="tp-header-nav">
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>

@@ -1,0 +1,163 @@
+{% extends 'base/base.html' %}
+{% load static %}
+
+{% block title %}Biz haqimizda - Bulut Digital{% endblock %}
+
+{% block content %}
+    <main>
+        <!-- breadcrumb area start -->
+        <div class="breadcrumb__area theme-bg pt-120 pb-120"
+             data-background="{% static 'assets/img/breadcrumb/breadcrumb-bg.png' %}">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xxl-12">
+                        <div class="breadcrumb__content p-relative z-index-1">
+                            <div class="breadcrumb__list mb-10">
+                                <span><a href="{% url 'index' %}">Asosiy</a></span>
+                                <span class="dvdr dvdr-line"></span>
+                                <span class="tp-bc-acive-menu">Biz haqimizda</span>
+                            </div>
+                            <h3 class="breadcrumb__title">Biz haqimizda</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- breadcrumb area end -->
+
+        <!--  -->
+        <!-- tp about area start -->
+        <div class="tp-bs-about pt-160 pb-90">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-xl-6 col-12 wow tpfadeUp">
+                        <div class="tp-bs-imgs p-relative " data-tilt="" data-tilt-perspective="2000">
+                            <div class="tp-bs-img text-center text-xl-start ml-100" data-tilt=""
+                                 data-tilt-perspective="2000">
+                                <img src="{% static 'assets/img/about/tp-bs-img.jpg' %}" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-12 wow tpfadeUp" data-wow-delay=".4s">
+                        <div class="tp-bs-about-info ml-40">
+                            <div class="section-title-wraper">
+                                <div class="tp-section">
+                                    <span class="tp-section__subtitle white-bg mb-15"><i class="before-border"></i> Bulut Digital Agency</span>
+                                    <h2 class="tp-section__title mb-30">Biz haqimizda</h2>
+                                    <p>2022 – yilning 10 – yanvar kuni Allohning bir ojiz bandasi “O'ZBEK DIGITAL
+                                        MARKETING ” bozoriga yangilik olib kiruvchi ajoyib g’oyani amalga oshirish uchun
+                                        jamoa to’play boshladi va siz hozir uning jamaoasi,
+                                        “BULUT DIGITAL AGENCY” veb saytida mehmon bo’lmoqdsiz!
+                                        <br>
+                                        <br>
+                                        <b>ASSALOMU – ALAYKUM!
+                                            XUSH KELIBSIZ!</b>
+                                        <br>
+                                        <br>
+                                        “Bulut” – bir guruh kreativ yoshlardan tashkil topgan va tajribali rahbar bilan
+                                        uyg’unlasha olgan o’zbek bozoridagi yangi
+
+                                        RAQAMLI MARKETING AGENTLIGI!</p>
+                                </div>
+                            </div>
+                            <div class="tp-bs-indo-btns d-flex flex-wrap align-items-center">
+                                <div class="tp-bs-link-btn mr-30 mb-30">
+                                    <a href="{% url 'contact' %}" class="tp-common-btn tp-btn-hover alt-color">Konsultatsiya
+                                        olish<span>
+                                 <i class="fal fa-long-arrow-right"></i>
+                                 <i class="fal fa-long-arrow-right"></i>
+                              </span>
+                                        <b></b>
+                                    </a>
+                                </div>
+                                <div class="tp-bs-contact-btn d-flex align-items-center mb-30">
+                                    <span><i class="fas fa-phone"></i></span>
+                                    <b>
+                                        <span>Telefon raqam</span> <br>
+                                        <a href="tel:+998901218008">+998 90 121 80 08</a>
+                                    </b>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- tp about area end  -->
+
+        <div class="tp-ab-fact-area fact-overlay p-relative pt-120 pb-85"
+             data-background="assets/img/about/about-fact-bg.jpg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-3 col-md-6">
+                        <div class="ab-fact-item mb-30">
+                            <span class="counter-up">50</span>
+                            <h3 class="ab-fact-item__title"><a>Muvoffaqiyatli loyihalar</a></h3>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6">
+                        <div class="ab-fact-item mb-30">
+                            <span class="counter-up">5</span>
+                            <h3 class="ab-fact-item__title"><a>Yillik Tajriba</a></h3>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6">
+                        <div class="ab-fact-item mb-30">
+                            <span class="counter-up">10</span>
+                            <h3 class="ab-fact-item__title"><a>Ishchilar Soni</a></h3>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6">
+                        <div class="ab-fact-item mb-30">
+                            <span class="counter-up">20</span>
+                            <h3 class="ab-fact-item__title"><a>Mamnun Mijozlar</a></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- cta are  -->
+        <div class="tp-bs-cta-area pt-105 pb-120 theme-bg p-relative">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="bs-cta-section text-center">
+                     <span class="bs-cta-section__subtitle mb-5 d-inline-block wow tpfadeUp">
+                        Bizga telefon raqamingizni qoldiring va biz siz bilan 30 daqiqa ichida bog'lanamiz</span>
+                            <div class="cd-intro">
+                                <h3 class="bs-cta-section__title cd-headline loading-bar mb-55 wow tpfadeUp">
+                                    <span>Biznesingizni rivojlantirish uchun marketing qadamlarni BEPUL konsultatsiya xizmatimiz orqali qo’lga kiriting.</span>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="bs-cta-btns text-center">
+                        <a href="{% url 'contact' %}" class="tp-btn tp-btn-hover mr-30 wow tpfadeRight">Konsultatsiya
+                            olish<span><i
+                                    class="fal fa-long-arrow-right"></i>
+                        <i class="fal fa-long-arrow-right"></i></span> <b></b> </a>
+                        <a href="tel:+998901218008"
+                           class="tp-white-btn tp-btn-hover alt-color cronblue-g-color wow tpfadeLeft"><span><i
+                                class="fas fa-phone"></i>
+                        <i class="fas fa-phone"></i></span> +998 90 121 80 08 <b></b></a>
+                    </div>
+                </div>
+            </div>
+            <div class="red-nots">
+                <img src="{% static 'assets/img/cta/point-bg.png' %}" alt="">
+            </div>
+            <div class="thumb-animation d-none d-lg-block">
+                <div class="like-thumb">
+                    <img src="{% static 'assets/img/cta/like-thumb.jpg' %}" alt="">
+                </div>
+                <div class="like-thumb-border">
+
+                </div>
+            </div>
+        </div>
+        <!-- cta end -->
+    </main>
+{% endblock %}

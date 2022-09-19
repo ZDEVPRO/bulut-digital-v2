@@ -1,0 +1,40 @@
+{% load static %}
+
+<footer>
+    <div class="bs-footer">
+        <div class="container">
+            <div class="bs-footer__top fotter-btn-bottom pt-100 pb-40 d-none d-md-block">
+                <div class="row align-items-center">
+                    <div class="col-6">
+                        <div class="bs-footer__top-logo">
+                            <a><img width="200" src="{{ site_logo.image.url }}" alt="{{ site_logo.title }}"></a>
+                        </div>
+                    </div>
+                    <div class="col-6 text-md-end">
+                        <div class="bs-footer__top-social">
+                            <span> <a href="#"><i class="fab fa-instagram"></i></a></span>
+                            <span> <a href="#"><i class="fab fa-facebook-f"></i></a></span>
+                            <span> <a href="#"><i class="fab fa-telegram"></i></a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tp-footer__bottom pt-25 pb-25">
+                <div class="row align-items-center">
+                    <div class="col-md-8 col-12">
+                        <div class="tp-copyrigh-text text-center text-md-start">
+                            <span><a href="{% url 'index' %}">BULUT – BIZ O’ZARO MANFAAT UCHUN KURASHAMIZ!</a></span>
+                        </div>
+                    </div>
+                    <div class="col-md-4 d-none d-md-block">
+                        <div class="tp-footer-menu text-end">
+                            <ul>
+                                <li>Barcha huquqlar himoyalangan.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>

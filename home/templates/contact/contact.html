@@ -1,0 +1,97 @@
+{% extends 'base/base.html' %}
+{% load static %}
+
+{% block title %}Aloqa - Bulut Digital{% endblock %}
+
+
+{% block content %}
+    {% if messages %}
+        <style>
+            .my-alert {
+                padding: 20px;
+                background-color: green;
+                color: white;
+                text-align: center;
+                margin-bottom: 30px;
+            }
+
+            .closebtn {
+                margin-left: 15px;
+                color: white;
+                font-weight: bold;
+                float: right;
+                font-size: 22px;
+                line-height: 20px;
+                cursor: pointer;
+                transition: 0.3s;
+            }
+
+            .closebtn:hover {
+                color: black;
+            }
+        </style>
+    {% endif %}
+    <main>
+        <!-- contact page info start  -->
+        <div class="contact-page-area pt-120 pb-90 wow tpfadeUp">
+            <div class="container">
+                <div class="row align-items-center">
+                    {% if messages %}
+                        {% for message in messages %}
+                            <div class="my-alert">
+                                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                                {{ message }}
+                            </div>
+                        {% endfor %}
+                    {% endif %}
+                    <div class="col-xl-6">
+                        <div class="mb-30">
+                            <div class="it-cta__title wow tpfadeUp">
+                                <div class="section-title-wraper">
+                                    <div class="tp-section">
+                                        <h2 class="tp-section__title text-black text-capitalize mb-25">Savolingiz
+                                            bormi?</h2>
+                                        <p class="pr-45">Be'pul konsultatsiya olish uchun yoki savolingizga javob olish
+                                            uchun, ism familiyangiz, telefon raqamingiz va xabaringizni yozing, biz siz
+                                            bilan eng qisqa vaqt ichida bog'lanamiz!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6">
+                        <div class="it-cta-form about-cta-form wow tpfadeUp">
+                            <form action="{% url 'contact' %}" method="post">{% csrf_token %}
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="input-item">
+                                            <span><i class="fas fa-user"></i></span>
+                                            <input name="full_name" type="text" placeholder="FISH">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="input-item">
+                                            <span><i class="fa fa-phone"></i></span>
+                                            <input name="phone" type="number" placeholder="Telefon raqam">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="input-item-textarea">
+                                            <span><i class="fas fa-pen"></i></span>
+                                            <textarea name="message" placeholder="Xabar"></textarea>
+                                        </div>
+                                        <button type="submit" class="it-cta-form-submit border-0">Xabarni Yuborish
+                                        </button>
+                                    </div>
+
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <!-- contact page info end  -->
+    </main>
+{% endblock %}

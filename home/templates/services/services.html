@@ -1,0 +1,142 @@
+{% extends 'base/base.html' %}
+{% load static %}
+
+{% block title %}Xizmatlar - Bulut Digital{% endblock %}
+
+{% block content %}
+    <main>
+        <!-- breadcrumb area start -->
+        <div class="breadcrumb__area theme-bg pt-120 pb-120" data-background="{% static 'assets/img/breadcrumb/breadcrumb-bg.png' %}">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xxl-12">
+                        <div class="breadcrumb__content p-relative z-index-1">
+                            <div class="breadcrumb__list mb-10">
+                                <span><a href="{% url 'index' %}">Asosiy</a></span>
+                                <span class="dvdr dvdr-line"></span>
+                                <span class="tp-bc-acive-menu">Xizmatlar</span>
+                            </div>
+                            <h3 class="breadcrumb__title">Xizmatlar</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- breadcrumb area end -->
+
+        <!-- service start  -->
+        <div class="tp-it-service serive-page-item-title pt-120 pb-90">
+            <div class="container">
+                {% block services %}{% include 'components/services.html' %}{% endblock %}
+            </div>
+        </div>
+        <!-- service end  -->
+
+        <!-- price area start -->
+        <div class="tp-app-price-area theme-bg fix pt-120 pb-90">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-6">
+                        <div class="section-title-wraper">
+                            <div class="tp-section text-center">
+                                <h2 class="tp-section__title mb-30">Narxlar</h2>
+                                <p>Siz Uchun Hamyonbop Narxdagi Xizmatlarimiz</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row gx-5">
+                    <div class="col-xl-4 col-lg-6">
+                        <div class="tp-price-box white-bg app-box-shadow mb-30 p-relative" data-aos="fade-up"
+                             data-aos-duration="1000">
+                            <div class="tp-price-box__info mb-35">
+                                <b><span>$</span>99</b>
+                                <h4 class="tp-price-box__info-title ">For Enterprise</h4>
+                                <span>Best choice for priority support</span>
+                            </div>
+                            <div class="tp-purcase-btn--wrapper mb-25">
+                                <a href="#" class="tp-white-btn text-capitalize w-100 text-center">
+                                 <span class="mr-5">
+                                     <i class="fas fa-shopping-basket"></i>
+                                     <i class="fas fa-shopping-basket"></i>
+                                 </span>
+                                    Purchase Now</a>
+                            </div>
+                            <div class="tp-price-fea-list app-list">
+                                <ul>
+                                    <li><i class="fal fa-check"></i><b>Free Custorm </b>Domain</li>
+                                    <li><i class="fal fa-check"></i><b>Unlimited </b>Boost Power</li>
+                                    <li><i class="fal fa-check"></i><b>Mobile-Optimized </b>Website</li>
+                                    <li><i class="fal fa-check"></i><b>Lifetime </b>Usages</li>
+                                </ul>
+                            </div>
+                            <div class="tp-price-box__star">
+                                <span><i class="fas fa-star"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 ">
+                        <div class="tp-price-box active white-bg app-box-shadow mb-30 p-relative" data-aos="fade-up"
+                             data-aos-duration="1500">
+                            <div class="tp-price-box__info mb-35">
+                                <b><span>$</span>120</b>
+                                <h4 class="tp-price-box__info-title text-mirage">For Agency & Company</h4>
+                                <span>Best choice for priority support</span>
+                            </div>
+                            <div class="tp-purcase-btn--wrapper mb-25">
+                                <a href="#" class="tp-btn text-capitalize w-100 text-center">
+                                 <span class="mr-10">
+                                     <i class="fas fa-shopping-basket"></i>
+                                     <i class="fas fa-shopping-basket"></i>
+                                 </span>
+                                    Purchase Now</a>
+                            </div>
+                            <div class="tp-price-fea-list app-list">
+                                <ul>
+                                    <li><i class="fal fa-check"></i><b>Free Custorm </b>Domain</li>
+                                    <li><i class="fal fa-check"></i><b>Unlimited </b>Boost Power</li>
+                                    <li><i class="fal fa-check"></i><b>Mobile-Optimized </b>Website</li>
+                                    <li><i class="fal fa-check"></i><b>Lifetime </b>Usages</li>
+                                </ul>
+                            </div>
+                            <div class="tp-price-box__star color-redical">
+                                <span><i class="fas fa-star"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-6">
+                        <div class="tp-price-box app-box-shadow white-bg mb-30 p-relative" data-aos="fade-up"
+                             data-aos-duration="2000">
+                            <div class="tp-price-box__info mb-35">
+                                <b><span>$</span>500</b>
+                                <h4 class="tp-price-box__info-title">For Big Company & Team</h4>
+                                <span>Best choice for priority support</span>
+                            </div>
+                            <div class="tp-purcase-btn--wrapper mb-25">
+                                <a href="#" class="tp-white-btn text-capitalize w-100 text-center">
+                                 <span class="mr-10">
+                                     <i class="fas fa-shopping-basket"></i>
+                                     <i class="fas fa-shopping-basket"></i>
+                                 </span>
+                                    Purchase Now</a>
+                            </div>
+                            <div class="tp-price-fea-list app-list">
+                                <ul>
+                                    <li><i class="fal fa-check"></i><b>Free Custorm </b>Domain</li>
+                                    <li><i class="fal fa-check"></i><b>Unlimited </b>Boost Power</li>
+                                    <li><i class="fal fa-check"></i><b>Mobile-Optimized </b>Website</li>
+                                    <li><i class="fal fa-check"></i><b>Lifetime </b>Usages</li>
+                                </ul>
+                            </div>
+                            <div class="tp-price-box__star">
+                                <span><i class="fas fa-star"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- price area end -->
+
+    </main>
+{% endblock %}
